@@ -1,8 +1,8 @@
-
+import Sidebar from "./components/sidebar"
 
 function App() {
   return (
-    <p>Hej hoppsan fallerarara</p>
+    <Sidebar></Sidebar>
   );
 }
 
