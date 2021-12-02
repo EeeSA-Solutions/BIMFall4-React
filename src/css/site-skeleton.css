@@ -1,3 +1,61 @@
+@font-face{
+    font-family: "Saira_Expanded";
+    src: url("./Saira_Expanded-Light.ttf");
+}
+
+*{
+    font-family: Saira_Expanded;
+    --lightBlue: #7bbeff;
+    --mediumBlue: #71b9ff;
+    --darkBlue: #56aafd;
+    --lightBlueGrey: #73b5f5;
+    --lightGrey: #ebeaea;
+    --mediumGrey: #e3e3e3;
+    --darkGrey: #dfdfdf;
+    --red: #e35454;
+    --white: #ffffff;
+    /*EXTRA?*/
+    --textDarkBlue: #36618a;
+    --gradeBlue: linear-gradient(
+      190deg,
+      var(--darkBlue) 33%,
+      var(--mediumBlue) 33%,
+      var(--mediumBlue) 73%,
+      var(--lightBlue) 73%
+    );
+    --gradeGrey: linear-gradient(
+      200deg,
+      var(--darkGrey) 15%,
+      var(--mediumGrey) 15%,
+      var(--mediumGrey) 40%,
+      var(--lightGrey) 40%
+    );
+    --progressbarBlue: repeating-linear-gradient(
+      45deg,
+      #7cadff,
+      #7cadff 15px,
+      #99beff 15px,
+      #99beff 30px
+    );
+    --progressbarOrange: repeating-linear-gradient(
+      45deg,
+      #ffae4a,
+      #ffae4a 15px,
+      #fec57e 15px,
+      #fec57e 30px
+    );
+    --progressbarRed: repeating-linear-gradient(
+      45deg,
+      #ff9898,
+      #ff9898 15px,
+      #ffb6b6 15px,
+      #ffb6b6 30px
+    );
+
+    padding: 0;
+    margin: 0;
+}
+
 main {
     height: 100vh;
     display: grid;
@@ -10,12 +68,30 @@ main {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 100%;
+    background: var(--gradeGrey);
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
 }
 
 li{
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 a:link{
     text-decoration: none;
+    padding: 5%;
+    width: 70%;
+    padding-right: 0;
+    padding-left: 20px;
+    display: flex;
+    font-size: 130%;
 }

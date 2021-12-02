@@ -5,5 +5,4 @@ function App() {
     <Sidebar></Sidebar>
   );
 }
-
 export default App;
